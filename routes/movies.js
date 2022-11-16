@@ -10,6 +10,7 @@ router.get("/", (req, res) => {
   )
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       res.json({ movies: data.results });
     });
 });
